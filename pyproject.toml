@@ -1,0 +1,15 @@
+[project]
+name = "git-commit-ai"
+version = "0.1.0"
+description = "AI-powered Git commit message generator CLI."
+license = "MIT"
+authors = [{ name = "Paulo Batista", email = "paulocsb@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["openai", "python-dotenv"]
+
+[project.scripts]
+git-commit-ai = "main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
